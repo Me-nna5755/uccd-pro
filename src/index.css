@@ -1,0 +1,153 @@
+@import "leaflet/dist/leaflet.css";
+@import "tailwindcss";
+body {
+  margin: 0;
+  font-family: Arial;
+  direction: rtl;
+  background: linear-gradient(135deg,#eef2ff,#f5f3ff);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: linear-gradient(90deg,#4f46e5,#9333ea);
+  color: white;
+}
+
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.btn {
+  background: linear-gradient(135deg,#4f46e5,#9333ea);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.auth {
+  max-width: 400px;
+  margin: 80px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f7ff;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Button */
+.btn {
+  background: linear-gradient(135deg,#4f46e5,#9333ea);
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Auth pages */
+.auth {
+  max-width: 400px;
+  margin: auto;
+  padding: 40px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+
+.section-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.section-animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+body {
+  font-family: system-ui;
+}
+
+/* خلفية متدرجة ناعمة */
+.auth-bg {
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #111827, #0f172a);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Glass Card */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Input */
+.input {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  outline: none;
+  transition: 0.3s;
+}
+
+.input:focus {
+  border-color: #60a5fa;
+  transform: scale(1.02);
+}
