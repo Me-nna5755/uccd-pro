@@ -1,7 +1,7 @@
 
 
 import { useState } from "react";
-import { db } from "../firebase/config";
+import { db } from "../firebase/config.js";
 import { collection, addDoc } from "firebase/firestore";
 
 export default function Contact() {
